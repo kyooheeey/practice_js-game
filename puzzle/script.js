@@ -11,8 +11,8 @@ startGame.addEventListener('click', (e) => {
 })
 
 const puzzle = document.getElementById('js-puzzle');
-const initialRows = 2;
-const initialColumns = 2;
+const initialRows = 4;
+const initialColumns = 4;
 
 // パズルの生成
 function puzzleInit(rows, columns){

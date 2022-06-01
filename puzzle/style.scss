@@ -182,6 +182,11 @@ body {
   background: $base_color;
   color: #f2f2f2;
   overflow: hidden;
+
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 @keyframes shake-text {
