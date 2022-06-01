@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: misaki_gothic;
+  src: url(../fonts/misaki_gothic.ttf);
+}
+
+html {
+  font-size: 10px;
+  line-height: 2;
+  letter-spacing: 0.3em;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: misaki_gothic;
+}
+
+.c-text1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.c-text1__span {
+  font-size: 1.6em;
+}
+
+.c-text2 {
+  font-size: 6.4rem;
+  line-height: 1.3;
+}
+
+.c-layer {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  padding: 100px 7% 1em;
+  background: #000;
+  z-index: 1;
+}
+
+.c-layer--first {
+  -webkit-transition: opcity 0.5s linear;
+  transition: opcity 0.5s linear;
+}
+
+.c-layer--first.is-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c-layer--puzzle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 2.5s linear;
+  transition: -webkit-transform 2.5s linear;
+  transition: transform 2.5s linear;
+  transition: transform 2.5s linear, -webkit-transform 2.5s linear;
+}
+
+.c-layer--puzzle.is-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.c-layer--clear {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 120px;
+  z-index: 3;
+  text-align: center;
+}
+
+.c-layer--clear .c-text {
+  -webkit-animation: shake-text 2s linear infinite;
+          animation: shake-text 2s linear infinite;
+}
+
+.c-layer--clear .c-text2 {
+  margin-top: 16px;
+}
+
+.c-layer--clear .c-text1 {
+  margin-top: 24px;
+}
+
+.c-btn1 {
+  display: inline-block;
+  padding: 0.5em 1.5em 0.2em;
+  border: 3px solid #88858C;
+  border-radius: 5px;
+  font-size: 2.4rem;
+}
+
+.c-btn1__wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.c-btn2 {
+  display: inline-block;
+  padding: 0.5em 1.5em 0.2em;
+  border: 3px solid rgba(21, 77, 1, 0.7);
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #154D01;
+}
+
+.c-btn2__wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.c-puzzle {
+  margin: 1em auto 0;
+  border-spacing: 0.5em;
+}
+
+.c-puzzle__tile {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #88858C;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 36px;
+  -webkit-transition: background .1s linear, color .2s linear;
+  transition: background .1s linear, color .2s linear;
+}
+
+.c-puzzle__tile:empty {
+  background: #2B6B92;
+  color: transparent;
+}
+
+.c-puzzle__tile.is-standby {
+  background: #88858C;
+  color: transparent;
+}
+
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1em 7% 0;
+  z-index: 5;
+}
+
+.l-header__btn {
+  color: #88858C;
+  font-size: 0;
+}
+
+.p-puzzle {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  background: #000;
+  color: #f2f2f2;
+  overflow: hidden;
+}
+
+@-webkit-keyframes shake-text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes shake-text {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  75% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
