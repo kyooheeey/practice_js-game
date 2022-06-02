@@ -1,0 +1,42 @@
+.p-othello {
+  width: 330px;
+  padding: 100px 0 1em;
+  margin: 0 auto;
+}
+
+.p-othello__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-board {
+  background: #333;
+}
+
+.c-board__cell {
+  background: #88858C;
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  font-family: initial;
+  font-size: 3rem;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.c-board__cell--black {
+  color: #000;
+}
+
+.c-board__cell--white {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,41 +1,3 @@
-// reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-h1,h2 {
-  font-weight: normal;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-// base
-// base > vars
-$base_color: #000;
-$font_base: #f2f2f2;
-$border1: #88858C;
-$blue: #2B6B92;
-$green: #154D01;
-$red: #90271F;
-
-// base > fonts
-@font-face {
-  font-family: misaki_gothic;
-  src: url(../fonts/misaki_gothic.ttf);
-}
-html {
-  font-size: 10px;
-  line-height: 2;
-  letter-spacing: 0.3em;
-}
-body {
-  font-size: 1.6rem;
-  font-family: misaki_gothic;
-}
-
 // componentmt
 .c-text1 {
   font-size: 1.8rem;
@@ -156,31 +118,11 @@ body {
   }
 }
 
-// layout
-.l-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 1em 7% 0;
-  z-index: 5;
-
-  &__btn {
-    color: $border1;
-    font-size: 0;
-  }
-}
-
 // project
 .p-puzzle {
   position: relative;
   height: 100vh;
   height: 100dvh;
-  background: $base_color;
-  color: #f2f2f2;
   overflow: hidden;
 
   main {

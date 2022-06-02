@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE OTHELLO</title>
+  <link rel="stylesheet" href="../assets/common.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="p-othello">
+  <header class="l-header">
+    <a href="../" class="l-header__btn l-header__btn--back">←</a>
+    <h1 class="c-hdg">THE OTHELLO</h1>
+    <a href="#" id="js-menuOpen" class="l-header__btn l-header__btn--menu">MENU</a>
+    <div id="js-menu" class="c-menu">
+      <div class="c-menu__head">
+        <p class="c-hdg">JS GAMES</p>
+        <a href="" id="js-menuClose" class="l-header__btn l-header__btn--menu">CLOSE</a>
+      </div>
+      <ul class="c-list">
+        <li class="c-list__item">
+          <a href="../puzzle/" class="c-list__link">
+            THE PUZZLE
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="./" class="c-list__link">
+            THE OTHELLO
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="https://github.com/kyooheeey" class="c-list__link" target="_blank">
+            GITHUB
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="https://twitter.com/TOKYO_KNOWHOW" class="c-list__link" target="_blank">
+            TWITTER
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </header>
+  <main class="p-othello__main">
+    <div class="p-othello__head">
+      <p class="c-text">
+        BLACK(YOU):
+        <span id="js-scoreBlack">0</span>
+      </p>
+      <p class="c-text">
+        WHITE(CPU):
+        <span id="js-scoreWhite">0</span>
+      </p>
+    </div>
+    <table id="js-board" class="c-board"></table>
+    <p id="js-message"></p>
+  </main>
+  <script src="../assets/common.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

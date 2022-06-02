@@ -5,15 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>THE PUZZLE</title>
+  <link rel="stylesheet" href="../assets/common.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="p-puzzle">
+  <header class="l-header">
+    <a href="../" class="l-header__btn l-header__btn--back">←</a>
+    <h1 class="c-hdg">THE PUZZLE</h1>
+    <a href="#" id="js-menuOpen" class="l-header__btn l-header__btn--menu">MENU</a>
+    <div id="js-menu" class="c-menu">
+      <div class="c-menu__head">
+        <p class="c-hdg">JS GAMES</p>
+        <a href="" id="js-menuClose" class="l-header__btn l-header__btn--menu">CLOSE</a>
+      </div>
+      <ul class="c-list">
+        <li class="c-list__item">
+          <a href="./" class="c-list__link">
+            THE PUZZLE
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="../othello/" class="c-list__link">
+            THE OTHELLO
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="https://github.com/kyooheeey" class="c-list__link" target="_blank">
+            GITHUB
+          </a>
+        </li>
+        <li class="c-list__item">
+          <a href="https://twitter.com/TOKYO_KNOWHOW" class="c-list__link" target="_blank">
+            TWITTER
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </header>
   <main>
-    <header class="l-header">
-      <a href="../" class="l-header__btn l-header__btn--back">←</a>
-      <h1 class="c-hdg">THE PUZZLE</h1>
-      <a href="" class="l-header__btn l-header__btn--menu">MENU</a>
-    </header>
     <div id="js-firstLayer" class="c-layer c-layer--first">
       <div class="c-layer__inner">
         <p class="c-text">THE PUZZLEへようこそ。<br>このゲームでは、空欄の上下左右にあるタイルをクリックするとそのタイルが移動します。左上が空欄のタイル、数字が入ったタイルは１～順番になるように並べるゲームです。</p>
@@ -59,9 +88,7 @@
       </div>
     </div>
   </main>
-  <!-- <footer class="l-footer">
-    <p class="c-text">2022 THE PUZZLE</p>
-  </footer> -->
+  <script src="../assets/common.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
